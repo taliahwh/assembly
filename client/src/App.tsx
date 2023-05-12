@@ -1,9 +1,12 @@
-import styles from './app.module.scss';
+import './app.css';
+
+// Components
+import Header from './components/header/Header';
 
 function App() {
   return (
     <>
-      <h1 className={styles.header}>Assembly [client]</h1>
+      <Header />
     </>
   );
 }
