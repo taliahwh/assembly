@@ -1,0 +1,14 @@
+@use '../../styles/mixin.scss';
+
+.container {
+  // background: yellow;
+  border: 1px solid black;
+  padding: 2px 12px;
+}
+.textInput {
+  width: 20rem;
+  font-family: mixin.$mono;
+  padding: 8px;
+  border: 0;
+  outline: none;
+}

@@ -6,6 +6,12 @@
   font-family: mixin.$sans;
 }
 
+.headingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .header {
   font-size: mixin.$display_02;
 }
