@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap');
 
 // FONT FAMILY
 $sans: 'Inter';
@@ -22,6 +22,7 @@ $display_02: 60px;
 $display_01: 77px;
 
 // FONT WEIGHT
+$thin: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
@@ -32,7 +33,7 @@ $black: #000;
 $neutral-100: #f5f5f5;
 $neutral-300: #d4d4d4;
 $dark-gray: #fee2e2;
-$medium-gray: #fef2f2;
+$neutral-500: #525252;
 $ink: #991b1b;
 
 // BORDER WIDTH
@@ -48,3 +49,10 @@ $medium: 16px;
 $large: 36px;
 $xLarge: 48px;
 $xxLarge: 64px;
+$blog-card-height: 14rem;
+$avatar-height: 40px;
+
+// MARGIN
+$mt-large: 48px 0 0 0;
+
+// PADDING

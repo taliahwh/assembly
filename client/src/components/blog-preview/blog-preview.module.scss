@@ -1,0 +1,65 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  // background: mixin.$neutral-100;
+  width: 100%;
+}
+
+.postImage {
+  height: mixin.$blog-card-height;
+  width: 100%;
+  object-fit: cover;
+  border-radius: mixin.$medium;
+  cursor: pointer;
+}
+
+.textContainer {
+  margin: mixin.$small 0;
+}
+
+.title {
+  font-size: mixin.$heading_06;
+  margin-bottom: 2px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.excerpt {
+  font-weight: mixin.$regular;
+  font-size: mixin.$paragraph_01;
+  line-height: 1.5;
+  color: mixin.$neutral-500;
+}
+
+.publisherContainer {
+  display: flex;
+  gap: mixin.$xSmall;
+  align-items: center;
+}
+
+.publisherImage {
+  height: mixin.$avatar-height;
+  width: mixin.$avatar-height;
+  object-fit: cover;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.publisherDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.publisherName {
+  font-size: mixin.$paragraph_01;
+}
+
+.publishedDate {
+  font-size: mixin.$caption;
+  font-weight: mixin.$thin;
+  color: mixin.$neutral-500;
+}

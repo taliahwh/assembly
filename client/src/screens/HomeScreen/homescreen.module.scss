@@ -1,0 +1,29 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  padding: 0 24px;
+  margin: mixin.$mt-large;
+  font-family: mixin.$sans;
+}
+
+.header {
+  font-size: mixin.$display_02;
+}
+
+.subheader {
+  font-size: mixin.$heading_06;
+  font-weight: mixin.$thin;
+  margin-left: 8px;
+}
+
+.blogCardContainer {
+  // background: green;
+  margin-top: mixin.$large;
+  margin-left: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1em;
+  grid-template-rows: masonry;
+  align-tracks: start; // A new masonry only property
+  justify-tracks: start; // A new masonry only property
+}
