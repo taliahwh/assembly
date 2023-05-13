@@ -1,4 +1,6 @@
 import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 // Styles
 import styles from './homescreen.module.scss';
@@ -19,6 +21,13 @@ function HomeScreen() {
         </div>
 
         <SearchBar />
+      </div>
+
+      {/* TODO - Responsive top stories */}
+      {/* Top Stories Component */}
+      <div className={styles.topStoriesContainer}>
+        <BlogPreview />
+        <BlogPreview />
       </div>
 
       {/* TODO - Implement masonry grid view */}

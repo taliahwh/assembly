@@ -12,13 +12,12 @@
 .btnContainer {
   display: flex;
   flex-direction: row;
-  // gap: 1em;
 }
 
 .app_icon {
   cursor: pointer;
-  width: mixin.$xLarge;
-  height: mixin.$xLarge;
+  width: mixin.$app-icon-height;
+  height: mixin.$app-icon-height;
 }
 
 .btnContainer {

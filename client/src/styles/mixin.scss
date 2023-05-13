@@ -51,8 +51,39 @@ $xLarge: 48px;
 $xxLarge: 64px;
 $blog-card-height: 14rem;
 $avatar-height: 32px;
+$app-icon-height: 42px;
 
 // MARGIN
 $mt-large: 48px 0 0 0;
 
 // PADDING
+
+// MEDIA QUERIES
+$max-width: 1440px;
+$mobile-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (min-width: 1px) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-flexbox {
+  @media (min-width: 1px) and (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

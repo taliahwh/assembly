@@ -6,11 +6,11 @@ import HomeScreen from './screens/HomeScreen/HomeScreen';
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
       {/* TODO - React Router@latest */}
       <HomeScreen />
-    </>
+    </div>
   );
 }
 

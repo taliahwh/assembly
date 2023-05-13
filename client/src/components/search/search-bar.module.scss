@@ -3,7 +3,12 @@
 .container {
   // background: yellow;
   border: 1px solid black;
+  border-radius: 2px;
   padding: 2px 12px;
+
+  @include mixin.tablet-flexbox {
+    margin-left: 8px;
+  }
 }
 .textInput {
   width: 20rem;

@@ -1,8 +1,13 @@
 @use '../../styles/mixin.scss' as mixin;
 
 .container {
+  max-width: mixin.$max-width;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
   padding: 0 24px;
-  margin: mixin.$mt-large;
+  margin: auto;
+  margin-top: mixin.$large;
   font-family: mixin.$sans;
 }
 
@@ -10,21 +15,49 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @include mixin.tablet-flexbox {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .header {
   font-size: mixin.$display_02;
+
+  @include mixin.tablet {
+    font-size: mixin.$heading_01;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$heading_01;
+  }
 }
 
 .subheader {
   font-size: mixin.$heading_06;
   font-weight: mixin.$thin;
   margin-left: 8px;
+
+  @include mixin.tablet {
+    font-size: mixin.$paragraph_02;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_02;
+  }
+}
+
+.topStoriesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3em;
+  margin-left: 8px;
 }
 
 .blogCardContainer {
-  // background: green;
-  margin-top: mixin.$large;
   margin-left: 8px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -32,4 +65,12 @@
   grid-template-rows: masonry;
   align-tracks: start; // A new masonry only property
   justify-tracks: start; // A new masonry only property
+
+  @include mixin.tablet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include mixin.mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
