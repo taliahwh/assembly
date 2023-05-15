@@ -7,4 +7,9 @@
   background: mixin.$ink-faded;
   padding: 4px 6px;
   border-radius: mixin.$border-radius-small;
+  cursor: pointer;
+
+  &:hover {
+    background: mixin.$ink;
+  }
 }
