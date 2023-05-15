@@ -1,5 +1,6 @@
 [
   {
+    "id": 1234561,
     "title": "The History of Soccer",
     "excerpt": "Soccer is the world's most popular sport. Learn about the history of soccer and how it became so popular.",
     "body_content": "Soccer originated in England in the 19th century and quickly spread around the world. The first World Cup was held in 1930 and has since become a global phenomenon. Today, soccer is played by millions of people around the world and has a huge following.",
@@ -13,6 +14,7 @@
     }
   },
   {
+    "id": 1234562,
     "title": "The Benefits of Running",
     "excerpt": "Running is a great way to stay active and healthy. Learn about the benefits of running and how to get started.",
     "body_content": "Running can:\n- Improve cardiovascular health\n- Help with weight loss\n- Reduce stress and anxiety\n- Boost energy and mood\nTo get started:\n1. Invest in a good pair of running shoes\n2. Start with a walking and running combination\n3. Gradually increase running time\n4. Set goals and track progress",
@@ -26,6 +28,7 @@
     }
   },
   {
+    "id": 1234563,
     "title": "The Benefits of Yoga for Athletes",
     "excerpt": "Yoga can enhance athletic performance and prevent injuries. Learn about the benefits of yoga for athletes.",
     "body_content": "Yoga can:\n- Improve flexibility and mobility\n- Increase strength and endurance\n- Enhance focus and concentration\n- Reduce risk of injuries\nTo get started:\n1. Find a yoga class for athletes\n2. Practice yoga regularly\n3. Focus on proper alignment and breathing\n4. Modify poses as needed",
@@ -39,6 +42,7 @@
     }
   },
   {
+    "id": 1234564,
     "title": "Tips for Playing Better Tennis",
     "excerpt": "Tennis is a fun and challenging sport. Improve your tennis skills with these tips.",
     "body_content": "1. Practice regularly\n2. Focus on footwork\n3. Improve your serve\n4. Develop your backhand\n5. Learn to anticipate your opponent's shots",
@@ -52,6 +56,7 @@
     }
   },
   {
+    "id": 1234565,
     "title": "The Mental Game of Golf",
     "excerpt": "Golf requires mental toughness as well as physical skill. Learn how to improve your mental game.",
     "body_content": "1. Stay focused on the present\n2. Manage your emotions\n3. Visualize successful shots\n4. Develop a pre-shot routine\n5. Stay positive and confident",
@@ -65,6 +70,7 @@
     }
   },
   {
+    "id": 1234566,
     "title": "The Importance of Stretching Before Exercise",
     "excerpt": "Stretching is a key component of any exercise routine. Learn why it's important and how to stretch properly.",
     "body_content": "Stretching can:\n- Improve flexibility\n- Reduce risk of injury\n- Increase range of motion\n- Enhance performance\nTo stretch properly:\n1. Warm up your muscles first\n2. Hold each stretch for 15-30 seconds\n3. Don't bounce\n4. Don't push too hard\n5. Stretch both sides equally",
@@ -79,12 +85,13 @@
   },
 
   {
+    "id": 1234567,
     "title": "The Rules of Basketball",
     "excerpt": "Basketball is a popular sport played around the world. Learn the rules of basketball and how to play.",
     "body_content": "Basic rules:\n- Two teams of five players each\n- A game consists of four quarters\n- The objective is to shoot the ball through the opponent's hoop\n- Fouls result in free throws or turnovers\n- The team with the most points at the end of the game wins",
     "post_image": "https://images.unsplash.com/photo-1602357280104-742c517a1d82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1250&q=80",
     "created_at": "2023-05-09T09:00:00Z",
-    "category": "Sports",
+    "category": "basketball",
     "publisher": {
       "name": "Hoops and Dreams",
       "id": 103,

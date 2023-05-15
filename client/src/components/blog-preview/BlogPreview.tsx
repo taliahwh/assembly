@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 // Component
 import TagComponent from '../tag/TagComponent';
@@ -6,30 +7,35 @@ import TagComponent from '../tag/TagComponent';
 // Styles
 import styles from './blog-preview.module.scss';
 
-type BlogPreviewProps = {
-  excerpt: string;
-};
+// Types
+import { BlogPreviewProps } from '../../types/posts';
 
-function BlogPreview() {
+function BlogPreview({
+  post_image,
+  title,
+  excerpt,
+  category,
+  publisher,
+  publisher_id,
+  created_at,
+  profileImage,
+}: BlogPreviewProps) {
   return (
     <div className={styles.container}>
-      <img
-        className={styles.postImage}
-        src="https://images.unsplash.com/photo-1633988354540-d3f4e97c67b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-      />
+      <img className={styles.postImage} src={post_image} />
 
       <div className={styles.textContainer}>
         <div className={styles.postDetailsContainer}>
-          <TagComponent />
-          <p className={styles.publisherName}>by Laura Cross</p>
-          <p className={styles.publishedDate}>about 2 days ago</p>
+          <TagComponent category={category} />
+          <p className={styles.publisherName}>
+            <span>by</span> {publisher}
+          </p>
+          <p className={styles.publishedDate}>
+            {moment(created_at).format('l')}
+          </p>
         </div>
-        <h5 className={styles.title}>The Benefits of a Weekly Plan</h5>
-        <p className={styles.excerpt}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magnam
-          enim obcaecati qui fugit ratione adipisci tenetur quibusdam!
-          Blanditiis quasi quod distinctio error illum natus corporis?
-        </p>
+        <h5 className={styles.title}>{title}</h5>
+        <p className={styles.excerpt}>{excerpt}</p>
       </div>
     </div>
   );

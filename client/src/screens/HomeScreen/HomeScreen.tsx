@@ -8,6 +8,9 @@ import BlogPreview from '../../components/blog-preview/BlogPreview';
 import SearchBar from '../../components/search/SearchBar';
 import TopStoriesCard from '../../components/top-stories/TopStoriesCard';
 
+// Sample data
+import posts from '../../data/posts.json';
+
 const TestExample = () => {
   return (
     <Carousel indicators={false}>
@@ -41,11 +44,20 @@ function HomeScreen() {
 
       {/* TODO - Implement masonry grid view */}
       <div className={styles.blogCardContainer}>
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
-        <BlogPreview />
+        {posts.map((post) => (
+          <div key={post.id}>
+            <BlogPreview
+              post_image={post.post_image}
+              title={post.title}
+              excerpt={post.excerpt}
+              category={post.category}
+              created_at={post.created_at}
+              publisher={post.publisher.name}
+              publisher_id={post.publisher.id}
+              profile_image={post.publisher.profile_image}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
