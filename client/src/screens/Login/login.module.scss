@@ -1,0 +1,76 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  // background: mixin.$neutral-100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  gap: 20px;
+  // background-color: green;
+  width: 40%;
+}
+
+.logo {
+  height: mixin.$xxLarge;
+  width: mixin.$xxLarge;
+}
+
+.header {
+  font-family: mixin.$sans;
+  font-size: mixin.$heading_03;
+  font-weight: mixin.$semibold;
+}
+
+.subheader {
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_02;
+  font-weight: mixin.$regular;
+}
+
+.inputContainer {
+  // TODO - fix width
+  min-width: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputWrapper {
+  border: mixin.$border-thin;
+  border-radius: mixin.$border-radius-small;
+  padding: 4px;
+}
+
+.textInput {
+  font-family: mixin.$mono;
+  padding: 4px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.darkBtn {
+  font-family: mixin.$sans;
+  font-weight: mixin.$semibold;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: black;
+  color: mixin.$neutral-100;
+  border-radius: mixin.$border-radius-small;
+  // &:hover {
+  //   background: mixin.$ink;
+  // }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
+  }
+}

@@ -35,10 +35,11 @@ $neutral-100: #f5f5f5;
 $neutral-300: #d4d4d4;
 $dark-gray: #1f1f1f;
 $neutral-500: #525252;
-$ink: #991b1b;
+$ink: #933c29;
 $ink-faded: rgba(153, 27, 27, 0.8);
 
 // BORDER WIDTH
+$border-input: 1px solid $black;
 $border-thin: 1px solid $neutral-300;
 $border-med: 2px solid $black;
 

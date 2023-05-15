@@ -29,7 +29,7 @@
 .btn {
   cursor: pointer;
   padding: 8px 10px;
-  font-family: mixin.$sans;
+  font-family: mixin.$mono;
 
   &:hover {
     background: mixin.$ink;
@@ -42,7 +42,7 @@
 }
 
 .btnDark {
-  font-family: mixin.$sans;
+  font-family: mixin.$mono;
   cursor: pointer;
   padding: 8px 10px;
   background: black;
