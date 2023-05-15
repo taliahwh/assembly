@@ -1,6 +1,4 @@
-import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-bootstrap/Carousel';
 
 // Styles
 import styles from './homescreen.module.scss';
@@ -8,6 +6,17 @@ import styles from './homescreen.module.scss';
 // Components
 import BlogPreview from '../../components/blog-preview/BlogPreview';
 import SearchBar from '../../components/search/SearchBar';
+import TopStoriesCard from '../../components/top-stories/TopStoriesCard';
+
+const TestExample = () => {
+  return (
+    <Carousel indicators={false}>
+      <Carousel.Item>
+        <TopStoriesCard />
+      </Carousel.Item>
+    </Carousel>
+  );
+};
 
 function HomeScreen() {
   return (
@@ -25,17 +34,18 @@ function HomeScreen() {
 
       {/* TODO - Responsive top stories */}
       {/* Top Stories Component */}
-      <div className={styles.topStoriesContainer}>
+      {/* <div className={styles.topStoriesContainer}>
         <BlogPreview />
         <BlogPreview />
-      </div>
+      </div> */}
 
       {/* TODO - Implement masonry grid view */}
       <div className={styles.blogCardContainer}>
         <BlogPreview />
+        {/* <BlogPreview />
         <BlogPreview />
         <BlogPreview />
-        {/* <BlogPreview /> */}
+        <BlogPreview /> */}
       </div>
     </div>
   );

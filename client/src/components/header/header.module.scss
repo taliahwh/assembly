@@ -23,14 +23,20 @@
 .btnContainer {
   border: mixin.$border-med;
   font-family: mixin.$sans;
+  height: mixin.$app-icon-height;
 }
 
 .btn {
   cursor: pointer;
   padding: 8px 10px;
+
   &:hover {
     background: mixin.$ink;
     color: white;
+  }
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
   }
 }
 
@@ -41,6 +47,11 @@
   color: mixin.$neutral-100;
   &:hover {
     background: mixin.$ink;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
   }
 }
 

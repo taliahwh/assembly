@@ -1,0 +1,10 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.tagName {
+  font-size: mixin.$footer;
+  font-family: mixin.$mono;
+  color: mixin.$neutral-100;
+  background: mixin.$ink-faded;
+  padding: 4px 6px;
+  border-radius: mixin.$border-radius-small;
+}

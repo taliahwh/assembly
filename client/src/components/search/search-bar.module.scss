@@ -1,7 +1,9 @@
 @use '../../styles/mixin.scss';
 
 .container {
-  // background: yellow;
+  display: flex;
+  align-items: center;
+  width: 100%;
   border: 1px solid black;
   border-radius: 2px;
   padding: 2px 12px;
@@ -9,11 +11,25 @@
   @include mixin.tablet-flexbox {
     margin-left: 8px;
   }
+
+  @include mixin.tablet {
+    // margin-left: 8px;
+    width: 70%;
+  }
+
+  @include mixin.desktop {
+    width: 20rem;
+  }
 }
 .textInput {
-  width: 20rem;
+  width: 100%;
   font-family: mixin.$mono;
-  padding: 8px;
+  padding: 4px;
   border: 0;
   outline: none;
+  flex: 1;
+}
+
+.searchIcon {
+  justify-self: flex-end;
 }

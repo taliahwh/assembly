@@ -32,7 +32,7 @@
   }
 
   @include mixin.mobile {
-    font-size: mixin.$heading_01;
+    font-size: mixin.$heading_02;
   }
 }
 
@@ -42,11 +42,11 @@
   margin-left: 8px;
 
   @include mixin.tablet {
-    font-size: mixin.$paragraph_02;
+    font-size: mixin.$paragraph_03;
   }
 
   @include mixin.mobile {
-    font-size: mixin.$paragraph_02;
+    font-size: mixin.$paragraph_01;
   }
 }
 
@@ -73,4 +73,8 @@
   @include mixin.mobile {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+}
+
+.textImage {
+  height: 5rem;
 }

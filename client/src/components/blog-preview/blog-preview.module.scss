@@ -3,18 +3,21 @@
 .container {
   // background: mixin.$neutral-100;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .postImage {
   height: mixin.$blog-card-height;
   width: 100%;
   object-fit: cover;
-  border-radius: mixin.$medium;
+  border-radius: mixin.$border-radius-small;
   cursor: pointer;
 }
 
 .textContainer {
-  margin: mixin.$small 0;
+  margin-top: mixin.$small;
+  // background: green;
 }
 
 .title {
@@ -32,27 +35,28 @@
   font-size: mixin.$paragraph_01;
   line-height: 1.5;
   color: mixin.$neutral-500;
+  // background: red;
 }
 
-.publisherContainer {
-  display: flex;
-  gap: mixin.$xSmall;
-  align-items: center;
-}
+// .publisherContainer {
+//   display: flex;
+//   gap: mixin.$xSmall;
+//   align-items: center;
+// }
 
-.publisherImage {
-  height: mixin.$avatar-height;
-  width: mixin.$avatar-height;
-  object-fit: cover;
-  border-radius: 100%;
-  cursor: pointer;
-}
+// .publisherImage {
+//   height: mixin.$avatar-height;
+//   width: mixin.$avatar-height;
+//   object-fit: cover;
+//   border-radius: 100%;
+//   cursor: pointer;
+// }
 
-.publisherDetails {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
+// .publisherDetails {
+//   display: flex;
+//   flex-direction: column;
+//   // gap: 3px;
+// }
 
 .publisherName {
   font-size: mixin.$paragraph_01;
@@ -62,4 +66,12 @@
   font-size: mixin.$caption;
   font-weight: mixin.$thin;
   color: mixin.$neutral-500;
+}
+
+.postDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 5px;
+  // background: orange;
 }

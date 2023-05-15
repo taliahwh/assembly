@@ -18,7 +18,9 @@ function SearchBar() {
         placeholder="Search by title, tags, or writer"
       />
 
-      <IoSearch />
+      <div className={styles.searchIcon}>
+        <IoSearch />
+      </div>
     </div>
   );
 }
