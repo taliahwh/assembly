@@ -1,0 +1,40 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  font-size: mixin.$display_01;
+  margin-bottom: mixin.$large;
+  font-family: mixin.$sans;
+}
+
+.errorMessage {
+  font-size: mixin.$heading_06;
+  margin-bottom: mixin.$large;
+  font-family: mixin.$mono;
+}
+
+.returnBtn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: black;
+  font-family: mixin.$sans;
+  border: mixin.$border-med;
+  color: mixin.$neutral-100;
+  &:hover {
+    background: mixin.$ink;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
+  }
+}

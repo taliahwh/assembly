@@ -20,6 +20,7 @@ export type BlogPreviewProps = {
   title: string;
   excerpt: string;
   category: string;
+  username: string;
   publisher: string;
   publisher_id: number;
   created_at: string;

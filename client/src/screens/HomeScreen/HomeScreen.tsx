@@ -54,6 +54,7 @@ function HomeScreen() {
               created_at={post.created_at}
               publisher={post.publisher.name}
               publisher_id={post.publisher.id}
+              username={post.publisher.username}
               profile_image={post.publisher.profile_image}
             />
           </div>

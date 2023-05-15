@@ -19,6 +19,7 @@ function BlogPreview({
   publisher_id,
   created_at,
   profileImage,
+  username,
 }: BlogPreviewProps) {
   return (
     <div className={styles.container}>
