@@ -28,6 +28,18 @@
   border: 0;
   outline: none;
   flex: 1;
+
+  @include mixin.mobile {
+    font-size: mixin.$caption;
+  }
+
+  @include mixin.tablet {
+    font-size: mixin.$paragraph_01;
+  }
+
+  @include mixin.desktop {
+    font-size: mixin.$paragraph_01;
+  }
 }
 
 .searchIcon {
