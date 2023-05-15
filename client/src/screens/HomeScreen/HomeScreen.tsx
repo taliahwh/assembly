@@ -42,10 +42,10 @@ function HomeScreen() {
       {/* TODO - Implement masonry grid view */}
       <div className={styles.blogCardContainer}>
         <BlogPreview />
-        {/* <BlogPreview />
         <BlogPreview />
         <BlogPreview />
-        <BlogPreview /> */}
+        <BlogPreview />
+        <BlogPreview />
       </div>
     </div>
   );
