@@ -14,7 +14,11 @@
   text-align: center;
   gap: 20px;
   // background-color: green;
-  width: 40%;
+  // @include mixin.tablet {
+  //   width: 40%;
+  // }
+  // background: green;
+  width: 100%;
 }
 
 .logo {
@@ -22,8 +26,8 @@
   width: mixin.$xxLarge;
 
   @include mixin.mobile {
-    height: mixin.$xxLarge;
-    width: mixin.$xxLarge;
+    height: mixin.$large;
+    width: mixin.$large;
   }
 }
 
@@ -49,11 +53,25 @@
 
 .inputContainer {
   // TODO - fix width
-  min-width: 200px;
-  width: 375px;
+
+  width: 100%;
+
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   gap: 18px;
+
+  // @include mixin.tablet {
+  //   padding: 0 14rem;
+  // }
+  @include mixin.tablet {
+    // padding: 0 14rem;
+    width: 400px;
+  }
+  @include mixin.desktop {
+    // padding: 0 14rem;
+    width: 500px;
+  }
 }
 
 .inputWrapper {
