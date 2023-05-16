@@ -1,0 +1,13 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.message {
+  background: mixin.$warning;
+  color: mixin.$warning-text;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  border-radius: mixin.$border-radius-small;
+  font-size: mixin.$paragraph_01;
+}

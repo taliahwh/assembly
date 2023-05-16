@@ -32,11 +32,20 @@ $bold: 700;
 $white: #fff;
 $black: #000;
 $neutral-100: #f5f5f5;
+// $neutral-200: #404040;
 $neutral-300: #d4d4d4;
 $dark-gray: #1f1f1f;
 $neutral-500: #525252;
 $ink: #933c29;
 $ink-faded: rgba(153, 27, 27, 0.8);
+
+// ALERT COLORS
+$warning: #fff3cd;
+$warning-text: #967821;
+$danger: #f8d7da;
+$danger-text: #721c24;
+$info: #e2e3e5;
+$info-text: #676b6f;
 
 // BORDER WIDTH
 $border-input: 1px solid $black;

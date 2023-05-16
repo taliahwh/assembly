@@ -20,24 +20,37 @@
 .logo {
   height: mixin.$xxLarge;
   width: mixin.$xxLarge;
+
+  @include mixin.mobile {
+    height: mixin.$xxLarge;
+    width: mixin.$xxLarge;
+  }
 }
 
 .header {
   font-family: mixin.$sans;
   font-size: mixin.$heading_03;
   font-weight: mixin.$semibold;
+
+  @include mixin.mobile {
+    font-size: mixin.$heading_05;
+  }
 }
 
 .subheader {
   font-family: mixin.$sans;
   font-size: mixin.$paragraph_02;
   font-weight: mixin.$regular;
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+  }
 }
 
 .inputContainer {
   // TODO - fix width
   min-width: 200px;
-  width: 400px;
+  width: 375px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -55,6 +68,10 @@
   border: none;
   outline: none;
   width: 100%;
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+  }
 }
 
 .darkBtn {
@@ -72,5 +89,30 @@
   @include mixin.mobile {
     font-size: mixin.$paragraph_01;
     padding: 8px;
+  }
+}
+
+.dividerContainer {
+  display: flex;
+  font-family: mixin.$mono;
+}
+
+.lineDivider {
+  display: block;
+}
+
+.prompt {
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_01;
+  color: mixin.$neutral-500;
+}
+
+.signUp {
+  font-weight: mixin.$semibold;
+  color: mixin.$dark-gray;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

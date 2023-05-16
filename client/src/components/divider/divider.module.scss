@@ -1,0 +1,17 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: mixin.$mono;
+}
+
+.border {
+  border: 1px solid mixin.$neutral-300;
+  width: 100%;
+}
+
+.content {
+  padding: 0 10px 0 10px;
+}
