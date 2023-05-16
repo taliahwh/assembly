@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Styles
@@ -10,7 +11,7 @@ import assembly_logo from '../../assets/assembly_icon.png';
 // Components
 import Alert from '../../components/alert/Alert';
 
-function Login() {
+const LoginScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPasswordInput, setShowPasswordInput] = useState(false);
@@ -25,7 +26,9 @@ function Login() {
 
   return (
     <div className={styles.container}>
-      <img src={assembly_logo} alt="Assembly" className={styles.logo} />
+      <Link to="/">
+        <img src={assembly_logo} alt="Assembly" className={styles.logo} />
+      </Link>
       <div className={styles.welcomeHeader}>
         <h1 className={styles.header}>Welcome back</h1>
         <h6 className={styles.subheader}>Please enter your details.</h6>
@@ -88,11 +91,14 @@ function Login() {
         )}
 
         <p className={styles.prompt}>
-          Don't have an account? <span className={styles.signUp}>Sign up</span>
+          Don't have an account?{' '}
+          <Link to="/signup" className={styles.signUp}>
+            Sign up
+          </Link>
         </p>
       </form>
     </div>
   );
-}
+};
 
-export default Login;
+export default LoginScreen;

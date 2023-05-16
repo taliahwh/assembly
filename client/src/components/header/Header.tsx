@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import assembly_logo from '../../assets/assembly_icon.png';
 
 // Styles
@@ -9,15 +10,15 @@ function Header() {
       <img className={styles.app_icon} src={assembly_logo} />
 
       <div className={styles.btnContainer}>
-        <div className={styles.btn}>
+        <Link to="/login" className={styles.btn}>
           <p className={styles.text}>Login</p>
-        </div>
+        </Link>
 
         <div className={styles.btnDivider} />
 
-        <div className={styles.btnDark}>
+        <Link to="/signup" className={styles.btnDark}>
           <p className={styles.lightText}>Become a creator</p>
-        </div>
+        </Link>
       </div>
     </div>
   );

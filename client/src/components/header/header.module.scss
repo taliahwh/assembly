@@ -30,6 +30,8 @@
   cursor: pointer;
   padding: 8px 10px;
   font-family: mixin.$mono;
+  text-decoration: none;
+  color: mixin.$black;
 
   &:hover {
     background: mixin.$ink;
@@ -47,8 +49,10 @@
   padding: 8px 10px;
   background: black;
   color: mixin.$neutral-100;
+  text-decoration: none;
   &:hover {
     background: mixin.$ink;
+    color: mixin.$neutral-100;
   }
 
   @include mixin.mobile {

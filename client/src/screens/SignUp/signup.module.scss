@@ -7,17 +7,12 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   text-align: center;
   gap: 20px;
-  // background-color: green;
-  // @include mixin.tablet {
-  //   width: 40%;
-  // }
-  // background: green;
   width: 100%;
 }
 
@@ -52,10 +47,7 @@
 }
 
 .inputContainer {
-  // TODO - fix width
-
   width: 100%;
-
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -72,6 +64,45 @@
     // padding: 0 14rem;
     width: 600px;
   }
+}
+
+.usernameWrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.usernameInputWrapper {
+  flex: 1;
+  border: mixin.$border-thin;
+  border-radius: mixin.$border-radius-small;
+  padding: 4px;
+}
+
+.domain {
+  font-family: mixin.$mono;
+  font-size: mixin.$paragraph_01;
+  justify-self: flex-end;
+  align-self: flex-end;
+
+  @include mixin.mobile {
+    font-size: mixin.$caption;
+  }
+}
+
+.flexInputWrapper {
+  display: flex;
+  gap: 10px;
+
+  @include mixin.mobile {
+    flex-direction: column;
+  }
+}
+
+.flexInput {
+  width: 100%;
+  border: mixin.$border-thin;
+  border-radius: mixin.$border-radius-small;
+  padding: 4px;
 }
 
 .inputWrapper {
@@ -125,7 +156,7 @@
   color: mixin.$neutral-500;
 }
 
-.signUp {
+.login {
   font-weight: mixin.$semibold;
   color: mixin.$dark-gray;
   cursor: pointer;
