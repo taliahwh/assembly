@@ -7,7 +7,9 @@ import styles from './header.module.scss';
 function Header() {
   return (
     <div className={styles.container}>
-      <img className={styles.app_icon} src={assembly_logo} />
+      <Link to="/">
+        <img className={styles.app_icon} src={assembly_logo} />
+      </Link>
 
       <div className={styles.btnContainer}>
         <Link to="/login" className={styles.btn}>
