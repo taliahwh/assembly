@@ -1,0 +1,105 @@
+@use '../../styles/mixin.scss';
+
+.container {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  border-top: mixin.$border-thin;
+  display: flex;
+  gap: 1rem;
+}
+
+.publisherImage {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: mixin.$border-radius-small;
+}
+
+// .publisherDetailsContainer {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.publisherName {
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_03;
+}
+
+.publisherBio {
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_01;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  @include mixin.mobile {
+    flex-direction: column;
+  }
+}
+
+.flexBtnContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-family: mixin.$mono;
+  font-size: mixin.$caption;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: black;
+  color: mixin.$neutral-100;
+  text-decoration: none;
+  &:hover {
+    background: mixin.$ink;
+    color: mixin.$neutral-100;
+    border: mixin.$border-input;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
+  }
+}
+
+.outlinedBtn {
+  display: flex;
+  align-items: center;
+  font-family: mixin.$mono;
+  font-size: mixin.$caption;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: none;
+  border: mixin.$border-input;
+  color: mixin.$black;
+  text-decoration: none;
+  &:hover {
+    background: mixin.$ink;
+    color: mixin.$neutral-100;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
+  }
+}
+
+.likeContainer {
+  background: none;
+  color: mixin.$ink;
+  border: mixin.$border-input;
+  padding: 8px 10px;
+
+  &:hover {
+    color: mixin.$neutral-100;
+    background: mixin.$ink;
+    border: mixin.$border-input;
+    // padding: 7px 10px;
+  }
+}

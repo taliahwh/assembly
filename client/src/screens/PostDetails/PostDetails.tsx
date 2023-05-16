@@ -5,9 +5,7 @@ import styles from './post-details.module.scss';
 
 // Components
 import TagComponent from '../../components/tag/TagComponent';
-
-//     "post_image": "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
-//       "profile_image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+import PublisherDetails from '../../components/publisher-details/PublisherDetails';
 
 const PostDetails = () => {
   return (
@@ -16,11 +14,7 @@ const PostDetails = () => {
 
       <div className={styles.postInfoContainer}>
         <TagComponent category="sports" />
-        {/* <img
-          className={styles.publisherImage}
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="publisher"
-        /> */}
+
         <div className={styles.sentenceDetails}>
           <p className={styles.sentence}>
             by <span className={styles.publisherName}>Toni Miller</span>
@@ -68,6 +62,8 @@ const PostDetails = () => {
           odio animi. Obcaecati nam, tempore quisquam blanditiis pariatur dolore
         </p>
       </div>
+
+      <PublisherDetails />
     </div>
   );
 };
