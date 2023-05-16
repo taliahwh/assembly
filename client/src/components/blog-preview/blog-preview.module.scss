@@ -20,8 +20,13 @@
   // background: green;
 }
 
+.postLink {
+  text-decoration: none;
+}
+
 .title {
   font-size: mixin.$heading_06;
+  color: mixin.$black;
   margin-bottom: 2px;
   &:hover {
     cursor: pointer;

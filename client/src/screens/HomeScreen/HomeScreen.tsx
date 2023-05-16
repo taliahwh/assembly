@@ -47,6 +47,7 @@ function HomeScreen() {
         {posts.map((post) => (
           <div key={post.id}>
             <BlogPreview
+              post_id={post.id}
               post_image={post.post_image}
               title={post.title}
               excerpt={post.excerpt}

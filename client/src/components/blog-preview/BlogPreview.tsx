@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 
 // Component
 import TagComponent from '../tag/TagComponent';
@@ -11,6 +12,7 @@ import styles from './blog-preview.module.scss';
 import { BlogPreviewProps } from '../../types/posts';
 
 function BlogPreview({
+  post_id,
   post_image,
   title,
   excerpt,
@@ -35,7 +37,9 @@ function BlogPreview({
             {moment(created_at).format('l')}
           </p>
         </div>
-        <h5 className={styles.title}>{title}</h5>
+        <Link to={`/post/${post_id}`} className={styles.postLink}>
+          <h5 className={styles.title}>{title}</h5>
+        </Link>
         <p className={styles.excerpt}>{excerpt}</p>
       </div>
     </div>

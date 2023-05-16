@@ -16,6 +16,7 @@ type Publisher = {
 };
 
 export type BlogPreviewProps = {
+  post_id: number;
   post_image: string;
   title: string;
   excerpt: string;
@@ -26,3 +27,13 @@ export type BlogPreviewProps = {
   created_at: string;
   profile_image: string;
 };
+
+// export type PostDetailProps = {
+//   title: string;
+//   post_image: string;
+//   publisher: string;
+//   publisher_id: number;
+//   profile_image: string;
+//   created_at: string;
+//   body_content: string;
+// };

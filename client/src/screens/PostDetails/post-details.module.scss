@@ -1,0 +1,71 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 3rem;
+  @include mixin.desktop {
+    width: 800px;
+  }
+  @include mixin.tablet {
+    width: 400;
+  }
+  @include mixin.mobile {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.title {
+  font-family: mixin.$sans;
+  font-weight: mixin.$semibold;
+  font-size: mixin.$heading_02;
+
+  @include mixin.mobile {
+    font-size: mixin.$heading_04;
+  }
+}
+
+.postInfoContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: mixin.$xSmall;
+  font-size: mixin.$paragraph_01;
+  margin-bottom: mixin.$xSmall;
+}
+
+.sentenceDetails {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.publisherImage {
+  height: mixin.$avatar-height;
+  width: mixin.$avatar-height;
+  border-radius: mixin.$border-radius-small;
+  object-fit: cover;
+}
+
+.publisherName {
+  font-size: mixin.$paragraph_01;
+}
+
+.publishedDate {
+  font-size: mixin.$caption;
+  color: mixin.$neutral-500;
+  padding-top: 2px;
+}
+
+.postImage {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  margin-bottom: mixin.$large;
+}
+
+.content {
+  font-family: mixin.$sans;
+}

@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen/HomeScreen';
 import LoginScreen from './screens/Login/LoginScreen';
 import SignUpScreen from './screens/SignUp/SignUpScreen';
 import NotFound from './screens/NotFound/NotFound';
+import PostDetails from './screens/PostDetails/PostDetails';
 
 function App() {
   console.log(window.location.host);
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomeScreen />} />
+          <Route path="/post/:id" element={<PostDetails />} />
         </Route>
 
         <Route path="/login" element={<LoginScreen />} />
