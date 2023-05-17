@@ -4,14 +4,21 @@ import { BsHeartFill } from 'react-icons/bs';
 // Styles
 import styles from './publisher-details.module.scss';
 
+// Components
+import Dropdown from '../dropdown/Dropdown';
+
 /**
  * TODO
  * - make buttons smaller in mobile
- * - add selector
  */
 
 // https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-const PublisherDetails = () => {
+
+type PublisherDetailsProps = {
+  onSelectTip: (value: string) => void;
+};
+
+const PublisherDetails = ({ onSelectTip }: PublisherDetailsProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
@@ -40,7 +47,7 @@ const PublisherDetails = () => {
           </div>
 
           <div className={styles.flexBtnContainer}>
-            <div className={styles.btn}>Selector</div>
+            <Dropdown onSelectTip={onSelectTip} />
             <div className={styles.btn}>Send tip</div>
           </div>
         </div>

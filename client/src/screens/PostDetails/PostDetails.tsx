@@ -8,6 +8,10 @@ import TagComponent from '../../components/tag/TagComponent';
 import PublisherDetails from '../../components/publisher-details/PublisherDetails';
 
 const PostDetails = () => {
+  const onSelectTip = (value: string) => {
+    console.log(`Tip: $${value}`);
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>The History of Soccer </h1>
@@ -63,7 +67,7 @@ const PostDetails = () => {
         </p>
       </div>
 
-      <PublisherDetails />
+      <PublisherDetails onSelectTip={onSelectTip} />
     </div>
   );
 };
