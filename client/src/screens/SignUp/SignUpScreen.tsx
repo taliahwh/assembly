@@ -48,7 +48,7 @@ const SignUpScreen = () => {
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-          <p className={styles.domain}>.theassemblyapp.com</p>
+          <div className={styles.domain}>.theassemblyapp.com</div>
         </div>
 
         <div className={styles.flexInputWrapper}>
