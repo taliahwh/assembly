@@ -78,10 +78,16 @@
 .profileImageContainer {
   width: 12rem;
   height: 12rem;
-  border: mixin.$border-input;
+  border: 1px dashed black;
   border-radius: mixin.$border-radius-small;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  // background-color: green;
+}
+
+.uploadBtn {
+  font-family: mixin.$mono;
+  text-decoration: underline;
+  cursor: pointer;
 }

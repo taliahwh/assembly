@@ -97,7 +97,7 @@ const ProfileSettings = () => {
                 onChange={handleAddBanner}
                 accept="image/*"
               >
-                Add New Banner
+                Upload
               </UploadControl>
             </div>
           </div>
@@ -112,7 +112,7 @@ const ProfileSettings = () => {
 // UploadControl.tsx
 const UploadControl = ({ children, value, onChange, disabled, accept }) => {
   return (
-    <label htmlFor="contained-button-file" className="m-0 w-100">
+    <label htmlFor="contained-button-file" className={styles.uploadBtn}>
       <input
         value={value}
         accept={accept}
