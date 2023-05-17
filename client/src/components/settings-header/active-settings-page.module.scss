@@ -1,0 +1,27 @@
+@use '../../styles/mixin.scss';
+
+.container {
+  padding: mixin.$medium;
+  font-family: mixin.$mono;
+  background: mixin.$neutral-100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: mixin.$medium;
+  border-bottom: mixin.$border-thin;
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+  }
+}
+
+.activePage {
+  color: white;
+  background: black;
+  padding: 6px;
+  border-radius: mixin.$border-radius-small;
+
+  @include mixin.mobile {
+    padding: 4px;
+  }
+}

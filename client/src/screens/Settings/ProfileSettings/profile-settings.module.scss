@@ -1,1 +1,87 @@
-@use '../../styles/mixin.scss' as mixin;
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  padding: 0 26px 26px 26px;
+}
+
+.header {
+  font-family: mixin.$sans;
+  font-size: mixin.$heading_04;
+  font-weight: mixin.$semibold;
+  padding: mixin.$large 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputWrapper {
+  border: mixin.$border-thin;
+  border-radius: mixin.$border-radius-small;
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+.textInput {
+  font-family: mixin.$mono;
+  padding: 4px;
+  border: none;
+  outline: none;
+  width: 100%;
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+  }
+}
+
+.inputLabel {
+  font-family: mixin.$mono;
+  padding-bottom: 4px;
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+  }
+}
+
+.url {
+  font-family: mixin.$sans;
+  font-size: mixin.$caption;
+  color: mixin.$neutral-500;
+}
+
+.updateBtn {
+  font-family: mixin.$mono;
+  font-weight: mixin.$semibold;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-top: 1rem;
+  // background: mixin.$ink;
+  color: black;
+  // color: mixin.$neutral-100;
+  border: mixin.$border-med;
+  border-radius: mixin.$border-radius-small;
+  &:hover {
+    background: black;
+    color: white;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
+  }
+}
+
+.profileImageContainer {
+  width: 12rem;
+  height: 12rem;
+  border: mixin.$border-input;
+  border-radius: mixin.$border-radius-small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
