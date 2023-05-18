@@ -87,7 +87,17 @@
 }
 
 .uploadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   font-family: mixin.$mono;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.imgRequirements {
+  font-family: mixin.$sans;
+  font-size: mixin.$caption;
+  color: mixin.$neutral-500;
 }

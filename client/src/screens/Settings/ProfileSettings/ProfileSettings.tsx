@@ -1,7 +1,9 @@
 import { useState, useCallback } from 'react';
+import { BsUpload } from 'react-icons/bs';
 
 // Components
 import ActiveSettingsPage from '../../../components/settings-header/ActiveSettingsPage';
+import UploadControl from '../../../components/upload/UploadControl';
 
 // Styles
 import styles from './profile-settings.module.scss';
@@ -11,6 +13,11 @@ const ProfileSettings = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [bio, setBio] = useState('');
+
+  const handleAddBanner = ({ target: { files } }) => {
+    const loadedImage = files[0];
+    // loadedImage will be a image file.
+  };
 
   return (
     <div className={styles.formInputContainer}>
@@ -97,40 +104,21 @@ const ProfileSettings = () => {
                 onChange={handleAddBanner}
                 accept="image/*"
               >
-                Upload
+                <BsUpload />
+                <div>Upload</div>
               </UploadControl>
             </div>
           </div>
+          <p className={styles.imgRequirements}>
+            Your image should be at least 200x200px and must be in JPG or PNG
+            format.
+          </p>
 
           <div className={styles.updateBtn}>Update settings</div>
         </form>
       </div>
     </div>
   );
-};
-
-// UploadControl.tsx
-const UploadControl = ({ children, value, onChange, disabled, accept }) => {
-  return (
-    <label htmlFor="contained-button-file" className={styles.uploadBtn}>
-      <input
-        value={value}
-        accept={accept}
-        disabled={disabled}
-        style={{ display: 'none' }}
-        id="contained-button-file"
-        multiple
-        type="file"
-        onChange={disabled ? () => null : onChange}
-      />
-      {children}
-    </label>
-  );
-};
-
-const handleAddBanner = ({ target: { files } }) => {
-  const loadedImage = files[0];
-  // loadedImage will be a image file.
 };
 
 export default ProfileSettings;
