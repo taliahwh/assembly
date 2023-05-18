@@ -1,7 +1,22 @@
 // Styles
 import styles from '../../screens/Settings/ProfileSettings/profile-settings.module.scss';
 
-const UploadControl = ({ children, value, onChange, disabled, accept }) => {
+type UploadControlProps = {
+  children: any;
+  className: any;
+  value: string;
+  disabled: boolean;
+  accept: string;
+  // onChange: () => void;
+};
+
+const UploadControl = ({
+  children,
+  value,
+  onChange,
+  disabled,
+  accept,
+}: UploadControlProps) => {
   return (
     <label htmlFor="contained-button-file" className={styles.uploadBtn}>
       <input
@@ -12,7 +27,7 @@ const UploadControl = ({ children, value, onChange, disabled, accept }) => {
         id="contained-button-file"
         multiple
         type="file"
-        onChange={disabled ? () => null : onChange}
+        onChange={disabled ? () => {} : onChange}
       />
       {children}
     </label>

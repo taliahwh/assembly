@@ -14,11 +14,6 @@ const ProfileSettings = () => {
   const [lastName, setLastName] = useState('');
   const [bio, setBio] = useState('');
 
-  const handleAddBanner = ({ target: { files } }) => {
-    const loadedImage = files[0];
-    // loadedImage will be a image file.
-  };
-
   return (
     <div className={styles.formInputContainer}>
       <ActiveSettingsPage activePage="profile" />
@@ -101,7 +96,7 @@ const ProfileSettings = () => {
             <div className={styles.profileImageContainer}>
               <UploadControl
                 className={styles.uploadBtn}
-                onChange={handleAddBanner}
+                onChange={(props) => handleAddBanner(props)}
                 accept="image/*"
               >
                 <BsUpload />
@@ -122,3 +117,9 @@ const ProfileSettings = () => {
 };
 
 export default ProfileSettings;
+
+const handleAddBanner = (props: any) => {
+  // console.log(props);
+  const loadedImage = props.target.files[0];
+  console.log(loadedImage);
+};

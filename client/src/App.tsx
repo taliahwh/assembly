@@ -13,7 +13,7 @@ import ProfileSettings from './screens/Settings/ProfileSettings/ProfileSettings'
 import SettingsLayout from './components/router/SettingsLayout';
 
 function App() {
-  console.log(window.location.host);
+  // console.log(window.location.host);
   return (
     <BrowserRouter>
       <Routes>
