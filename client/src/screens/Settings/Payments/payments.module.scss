@@ -33,12 +33,20 @@
   border-radius: mixin.$border-radius-small;
   background-color: mixin.$ink;
   cursor: pointer;
+
+  @include mixin.mobile {
+    padding: 8px;
+  }
 }
 
 .btnText {
   font-family: mixin.$sans;
   font-size: mixin.$paragraph_02;
   color: white;
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+  }
 }
 
 .divider {
