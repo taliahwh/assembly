@@ -15,10 +15,10 @@ const ProfileSettings = () => {
   const [bio, setBio] = useState('');
 
   return (
-    <div className={styles.formInputContainer}>
+    <>
       <ActiveSettingsPage activePage="profile" />
       <div className={styles.container}>
-        <div className={styles.header}>Profile</div>
+        <h1 className={styles.header}>Profile</h1>
 
         <form className={styles.form}>
           <div className={styles.formInputContainer}>
@@ -112,7 +112,7 @@ const ProfileSettings = () => {
           <div className={styles.updateBtn}>Update settings</div>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 

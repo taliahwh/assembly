@@ -2,11 +2,13 @@
 
 .container {
   padding: 0 26px 26px 26px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .header {
   font-family: mixin.$sans;
-  font-size: mixin.$heading_04;
+  font-size: mixin.$heading_05;
   font-weight: mixin.$semibold;
   padding: mixin.$large 0;
 }

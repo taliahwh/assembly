@@ -20,8 +20,28 @@
   background: black;
   padding: 6px;
   border-radius: mixin.$border-radius-small;
+  cursor: pointer;
 
   @include mixin.mobile {
     padding: 4px;
+  }
+}
+
+.page {
+  text-decoration: none;
+  color: black;
+
+  :hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+.link {
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 }

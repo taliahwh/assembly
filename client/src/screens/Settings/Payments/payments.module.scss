@@ -1,0 +1,47 @@
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  padding: 36px 26px 26px 26px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.headerContainer {
+  margin-bottom: mixin.$xLarge;
+}
+
+.header {
+  font-family: mixin.$sans;
+  font-size: mixin.$heading_05;
+  font-weight: mixin.$semibold;
+}
+
+.subheader {
+  font-weight: mixin.$regular;
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_02;
+}
+
+.stripeBtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: mixin.$border-input;
+  width: 14rem;
+  padding: 12px;
+  border-radius: mixin.$border-radius-small;
+  background-color: mixin.$ink;
+  cursor: pointer;
+}
+
+.btnText {
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_02;
+  color: white;
+}
+
+.divider {
+  border-top: mixin.$border-input;
+  margin-top: mixin.$xLarge;
+}
