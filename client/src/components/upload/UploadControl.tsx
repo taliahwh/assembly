@@ -2,12 +2,12 @@
 import styles from '../../screens/Settings/ProfileSettings/profile-settings.module.scss';
 
 type UploadControlProps = {
-  children: any;
+  children?: any;
   className: any;
-  value: string;
-  disabled: boolean;
+  value?: string;
+  disabled?: boolean;
   accept: string;
-  // onChange: () => void;
+  onChange: (props: any) => void;
 };
 
 const UploadControl = ({
