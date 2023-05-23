@@ -13,13 +13,13 @@ function Header() {
 
       <div className={styles.btnContainer}>
         <Link to="/login" className={styles.btn}>
-          <p className={styles.text}>Login</p>
+          <div className={styles.text}>Login</div>
         </Link>
 
         <div className={styles.btnDivider} />
 
         <Link to="/signup" className={styles.btnDark}>
-          <p className={styles.lightText}>Become a creator</p>
+          <div className={styles.lightText}>Become a creator</div>
         </Link>
       </div>
     </div>
