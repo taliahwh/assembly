@@ -48,25 +48,63 @@ function SettingsHeader({
         )}
       </div>
 
-      {menuOpen && <SettingsMenu />}
+      {menuOpen && <SettingsMenu closeMenu={onCloseMenu} />}
     </>
   );
 }
 
-const SettingsMenu = () => {
+type SettingsMenuProps = {
+  closeMenu: () => void;
+};
+
+const SettingsMenu = ({ closeMenu }: SettingsMenuProps) => {
   return (
     <div className={styles.menuContainer}>
-      <MenuOption icon={<MdPayment size="18" />} title="Profile" />
-      <MenuOption
-        icon={<BsFillFileEarmarkTextFill size="18" />}
-        title="Posts"
-      />
-      <MenuOption icon={<BsGraphUp size="18" />} title="Analytics" />
-      <MenuOption icon={<MdPayment size="18" />} title="Payments" />
-      <MenuOption
-        icon={<BsFillBookmarkHeartFill size="18" />}
-        title="Library"
-      />
+      <Link
+        to={`/settings/profile/:id`}
+        className={styles.link}
+        onClick={closeMenu}
+      >
+        <MenuOption icon={<MdPayment size="18" />} title="Profile" />
+      </Link>
+
+      <Link
+        to={`/settings/posts/:id`}
+        className={styles.link}
+        onClick={closeMenu}
+      >
+        <MenuOption
+          icon={<BsFillFileEarmarkTextFill size="18" />}
+          title="Posts"
+        />
+      </Link>
+
+      <Link
+        to={`/settings/analytics/:id`}
+        className={styles.link}
+        onClick={closeMenu}
+      >
+        <MenuOption icon={<BsGraphUp size="18" />} title="Analytics" />
+      </Link>
+
+      <Link
+        to={`/settings/payments/:id`}
+        className={styles.link}
+        onClick={closeMenu}
+      >
+        <MenuOption icon={<MdPayment size="18" />} title="Payments" />
+      </Link>
+
+      <Link
+        to={`/settings/library/:id`}
+        className={styles.link}
+        onClick={closeMenu}
+      >
+        <MenuOption
+          icon={<BsFillBookmarkHeartFill size="18" />}
+          title="Library"
+        />
+      </Link>
     </div>
   );
 };
