@@ -1,0 +1,26 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.name {
+  font-family: mixin.$mono;
+  font-size: mixin.$paragraph_01;
+}
+
+.profileImage {
+  border: mixin.$border-input;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
