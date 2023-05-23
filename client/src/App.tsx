@@ -2,6 +2,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Hooks
+import ScrollToTop from './hooks/ScrollToTop';
+
 // Header Layouts
 import Layout from './components/router/Layout';
 import SettingsLayout from './components/router/SettingsLayout';
@@ -21,6 +24,7 @@ function App() {
   // console.log(window.location.host);
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomeScreen />} />

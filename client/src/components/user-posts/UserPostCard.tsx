@@ -35,7 +35,7 @@ const UserPostCard = ({ edit }: UserPostCardProps) => {
             illum est, officiis libero voluptas.
           </p>
 
-          {edit && (
+          {edit ? (
             <div className={styles.btnContainer}>
               <div className={styles.editPostBtn}>Edit Post</div>
 
@@ -43,6 +43,16 @@ const UserPostCard = ({ edit }: UserPostCardProps) => {
                 likeCount={37}
                 bookmarkCount={99}
                 viewCount={284}
+              />
+            </div>
+          ) : (
+            <div className={styles.btnContainer}>
+              <div />
+
+              <PostAnalytics
+                likeCount={37}
+                // bookmarkCount={99}
+                // viewCount={284}
               />
             </div>
           )}

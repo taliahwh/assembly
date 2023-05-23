@@ -10,8 +10,8 @@ import {
 
 type PostAnalyticsProps = {
   likeCount: number;
-  bookmarkCount: number;
-  viewCount: number;
+  bookmarkCount?: number;
+  viewCount?: number;
 };
 
 const PostAnalytics = ({
@@ -25,14 +25,20 @@ const PostAnalytics = ({
         <BsFillHeartFill size="20" />
         <div>{likeCount}</div>
       </div>
-      <div className={styles.analyticsWrapper}>
-        <BsFillFileEarmarkTextFill size="20" />
-        <div>{bookmarkCount}</div>
-      </div>
-      <div className={styles.analyticsWrapper}>
-        <BsFillEyeFill size="20" />
-        <div>{viewCount}</div>
-      </div>
+
+      {bookmarkCount && (
+        <div className={styles.analyticsWrapper}>
+          <BsFillFileEarmarkTextFill size="20" />
+          <div>{bookmarkCount}</div>
+        </div>
+      )}
+
+      {viewCount && (
+        <div className={styles.analyticsWrapper}>
+          <BsFillEyeFill size="20" />
+          <div>{viewCount}</div>
+        </div>
+      )}
     </div>
   );
 };

@@ -15,9 +15,9 @@ const UserProfile = () => {
         <h4 className={styles.header}>Posts</h4>
 
         <div className={styles.postsContainer}>
-          <UserPostCard />
-          <UserPostCard />
-          <UserPostCard />
+          <UserPostCard edit={false} />
+          <UserPostCard edit={false} />
+          <UserPostCard edit={false} />
         </div>
       </div>
     </>

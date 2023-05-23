@@ -20,7 +20,7 @@ function BlogPreview({
   publisher,
   publisher_id,
   created_at,
-  profileImage,
+
   username,
 }: BlogPreviewProps) {
   return (

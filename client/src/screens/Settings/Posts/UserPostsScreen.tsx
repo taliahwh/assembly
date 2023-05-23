@@ -20,9 +20,9 @@ const UserPostsScreen = () => {
         </div>
 
         <div className={styles.postsContainer}>
-          <UserPostCard />
-          <UserPostCard />
-          <UserPostCard />
+          <UserPostCard edit={true} />
+          <UserPostCard edit={true} />
+          <UserPostCard edit={true} />
         </div>
       </div>
     </>
