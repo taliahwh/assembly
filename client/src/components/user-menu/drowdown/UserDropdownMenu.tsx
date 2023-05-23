@@ -1,11 +1,13 @@
-// Styles
-import styles from './dropdown.module.scss';
+import { Link } from 'react-router-dom';
 
 // Assets
 import { BsFillPenFill, BsFillBookmarkHeartFill } from 'react-icons/bs';
 import { IoMdSettings } from 'react-icons/io';
 import { RxExit } from 'react-icons/rx';
 import { HiUser } from 'react-icons/hi';
+
+// Styles
+import styles from './dropdown.module.scss';
 
 const UserDropdownMenu = () => {
   return (
@@ -18,17 +20,23 @@ const UserDropdownMenu = () => {
 
         <div className={styles.menuItem}>
           <HiUser className={styles.icon} />
-          <div className={styles.title}>Profile</div>
+          <Link to={`/profile/:id`} className={styles.link}>
+            <div className={styles.title}>Profile</div>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
           <BsFillBookmarkHeartFill className={styles.icon} />
-          <div className={styles.title}>Bookmarks</div>
+          <Link to={`/settings/profile/:id/bookmarks`} className={styles.link}>
+            <div className={styles.title}>Bookmarks</div>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
           <IoMdSettings className={styles.icon} />
-          <div className={styles.title}>Settings</div>
+          <Link to={`/settings/profile/:id`} className={styles.link}>
+            <div className={styles.title}>Settings</div>
+          </Link>
         </div>
       </div>
 

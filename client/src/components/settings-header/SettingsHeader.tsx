@@ -10,6 +10,7 @@ import {
   BsFillFileEarmarkTextFill,
   BsGraphUp,
 } from 'react-icons/bs';
+import { RxExit } from 'react-icons/rx';
 
 // Styles
 import styles from './settings-header.module.scss';
@@ -95,16 +96,9 @@ const SettingsMenu = ({ closeMenu }: SettingsMenuProps) => {
         <MenuOption icon={<MdPayment size="18" />} title="Payments" />
       </Link>
 
-      {/* <Link
-        to={`/settings/library/:id`}
-        className={styles.link}
-        onClick={closeMenu}
-      >
-        <MenuOption
-          icon={<BsFillBookmarkHeartFill size="18" />}
-          title="Library"
-        />
-      </Link> */}
+      <Link to={`/logout`} className={styles.link} onClick={closeMenu}>
+        <MenuOption icon={<RxExit size="18" />} title="Logout" />
+      </Link>
     </div>
   );
 };
