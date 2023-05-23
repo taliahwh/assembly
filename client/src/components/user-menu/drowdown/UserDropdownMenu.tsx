@@ -5,6 +5,7 @@ import styles from './dropdown.module.scss';
 import { BsFillPenFill, BsFillBookmarkHeartFill } from 'react-icons/bs';
 import { IoMdSettings } from 'react-icons/io';
 import { RxExit } from 'react-icons/rx';
+import { HiUser } from 'react-icons/hi';
 
 const UserDropdownMenu = () => {
   return (
@@ -13,6 +14,11 @@ const UserDropdownMenu = () => {
         <div className={styles.menuItem}>
           <BsFillPenFill className={styles.icon} />
           <div className={styles.title}>Create a Post</div>
+        </div>
+
+        <div className={styles.menuItem}>
+          <HiUser className={styles.icon} />
+          <div className={styles.title}>Profile</div>
         </div>
 
         <div className={styles.menuItem}>
