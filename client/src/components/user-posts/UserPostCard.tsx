@@ -34,7 +34,7 @@ const UserPostCard = () => {
           <div className={styles.btnContainer}>
             <div className={styles.editPostBtn}>Edit Post</div>
 
-            <PostAnalytics />
+            <PostAnalytics likeCount={37} bookmarkCount={99} viewCount={284} />
           </div>
         </div>
       </div>
