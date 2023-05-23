@@ -31,7 +31,10 @@ function BlogPreview({
         <div className={styles.postDetailsContainer}>
           <TagComponent category={category} />
           <p className={styles.publisherName}>
-            <span>by</span> {publisher}
+            <span>by</span>{' '}
+            <Link className={styles.link} to={`/profile/${publisher_id}`}>
+              {publisher}
+            </Link>
           </p>
           <p className={styles.publishedDate}>
             {moment(created_at).format('l')}
