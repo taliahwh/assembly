@@ -82,3 +82,14 @@
     padding: 8px;
   }
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+
+  :hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

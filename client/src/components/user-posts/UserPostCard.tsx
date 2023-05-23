@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import PostAnalytics from '../post-analytics/PostAnalytics';
@@ -24,9 +24,11 @@ const UserPostCard = ({ edit }: UserPostCardProps) => {
         <p className={styles.createdAt}>MAY 15, 2023 3:00 PM</p>
 
         <div className={styles.postContentContainer}>
-          <h4 className={styles.title}>
-            Hide Your Grails. The Rich Are Coming
-          </h4>
+          <Link to={`/post/:id`} className={styles.link}>
+            <h4 className={styles.title}>
+              Hide Your Grails. The Rich Are Coming
+            </h4>
+          </Link>
 
           <p className={styles.excerpt}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
