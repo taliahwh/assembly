@@ -95,7 +95,7 @@ const SettingsMenu = ({ closeMenu }: SettingsMenuProps) => {
         <MenuOption icon={<MdPayment size="18" />} title="Payments" />
       </Link>
 
-      <Link
+      {/* <Link
         to={`/settings/library/:id`}
         className={styles.link}
         onClick={closeMenu}
@@ -104,7 +104,7 @@ const SettingsMenu = ({ closeMenu }: SettingsMenuProps) => {
           icon={<BsFillBookmarkHeartFill size="18" />}
           title="Library"
         />
-      </Link>
+      </Link> */}
     </div>
   );
 };

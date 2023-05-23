@@ -18,7 +18,12 @@ const UserPostsScreen = () => {
             View and manage posts, all in one place.
           </h6>
         </div>
-        <UserPostCard />
+
+        <div className={styles.postsContainer}>
+          <UserPostCard />
+          <UserPostCard />
+          <UserPostCard />
+        </div>
       </div>
     </>
   );

@@ -9,6 +9,7 @@
   align-items: center;
   gap: mixin.$medium;
   border-bottom: mixin.$border-thin;
+  width: 100%;
 
   @include mixin.mobile {
     font-size: mixin.$paragraph_01;

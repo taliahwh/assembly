@@ -21,3 +21,9 @@
   font-family: mixin.$sans;
   font-size: mixin.$paragraph_02;
 }
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: mixin.$medium;
+}

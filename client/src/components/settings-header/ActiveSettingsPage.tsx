@@ -32,7 +32,7 @@ const ActiveSettingsPage = ({ activePage }: ActiveSettingsPageProps) => {
           <div className={styles.page}>Payments</div>
         </Link>
       )}
-      {activePage === 'library' ? (
+      {activePage === 'analytics' ? (
         <div className={styles.activePage}>Analytics</div>
       ) : (
         <Link to="/settings/analytics/:id" className={styles.link}>
