@@ -14,6 +14,7 @@ import NotFound from './screens/NotFound/NotFound';
 import PostDetails from './screens/PostDetails/PostDetails';
 import ProfileSettings from './screens/Settings/ProfileSettings/ProfileSettings';
 import PaymentsScreen from './screens/Settings/Payments/PaymentsScreen';
+import UserPostsScreen from './screens/Settings/Posts/UserPostsScreen';
 
 function App() {
   // console.log(window.location.host);
@@ -28,6 +29,7 @@ function App() {
         <Route element={<SettingsLayout />}>
           <Route path="/settings/profile/:id" element={<ProfileSettings />} />
           <Route path="/settings/payments/:id" element={<PaymentsScreen />} />
+          <Route path="/settings/posts/:id" element={<UserPostsScreen />} />
         </Route>
 
         <Route path="/login" element={<LoginScreen />} />
@@ -40,8 +42,9 @@ function App() {
 
 export default App;
 
-// {/* <div>
-// <Header />
-// {/* TODO - React Router@latest */}
-// <HomeScreen />
-// </div> */}
+/**
+ * TODO
+ * - add navigation to menu in settings
+ * - settings -> Posts
+ * - settings -> Library [rename??]
+ */

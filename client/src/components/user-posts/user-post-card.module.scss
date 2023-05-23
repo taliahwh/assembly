@@ -1,0 +1,84 @@
+@use '../../styles/mixin.scss' as mixin;
+
+// TODO
+// - truncate expert text [line-clamp??]
+
+.container {
+  font-family: mixin.$sans;
+  background-color: mixin.$neutral-100;
+  padding: mixin.$small;
+  border-radius: mixin.$border-radius-small;
+  width: 100%;
+  display: flex;
+  gap: 14px;
+
+  @include mixin.desktop {
+    height: 13rem;
+  }
+  @include mixin.tablet {
+    height: 14rem;
+  }
+
+  @include mixin.mobile {
+    // height: 25rem;
+    flex-direction: column;
+  }
+}
+
+.postImage {
+  height: 100%;
+  border-radius: mixin.$border-radius-small;
+
+  @include mixin.mobile {
+    width: 100%;
+  }
+}
+
+.postDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // background: yellow;
+  height: 100%;
+}
+
+.createdAt {
+  // font-family: mixin.$sans;
+  font-size: mixin.$caption;
+  font-weight: mixin.$semibold;
+  color: mixin.$neutral-500;
+}
+
+.title {
+  font-size: mixin.$heading_06;
+  font-weight: mixin.$semibold;
+  // font-family: mixin.$sans;
+}
+
+.excerpt {
+  font-size: mixin.$paragraph_01;
+  // background-color: green;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editPostBtn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: black;
+  font-family: mixin.$sans;
+  border: mixin.$border-med;
+  color: mixin.$neutral-100;
+  &:hover {
+    background: mixin.$ink;
+  }
+
+  @include mixin.mobile {
+    font-size: mixin.$paragraph_01;
+    padding: 8px;
+  }
+}

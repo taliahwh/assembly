@@ -1,0 +1,23 @@
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  padding: 36px 26px 26px 26px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.headerContainer {
+  margin-bottom: mixin.$xLarge;
+}
+
+.header {
+  font-family: mixin.$sans;
+  font-size: mixin.$heading_05;
+  font-weight: mixin.$semibold;
+}
+
+.subheader {
+  font-weight: mixin.$regular;
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_02;
+}

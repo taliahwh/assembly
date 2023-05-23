@@ -1,0 +1,13 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.analyticsContainer {
+  font-family: mixin.$mono;
+  display: flex;
+  gap: 10px;
+}
+
+.analyticsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
