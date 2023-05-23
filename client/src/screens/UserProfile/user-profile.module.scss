@@ -1,0 +1,17 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  padding: 26px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.header {
+  font-size: mixin.$heading_05;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

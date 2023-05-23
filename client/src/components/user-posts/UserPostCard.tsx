@@ -6,7 +6,11 @@ import PostAnalytics from '../post-analytics/PostAnalytics';
 // Styles
 import styles from './user-post-card.module.scss';
 
-const UserPostCard = () => {
+type UserPostCardProps = {
+  edit: boolean;
+};
+
+const UserPostCard = ({ edit }: UserPostCardProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
@@ -31,11 +35,17 @@ const UserPostCard = () => {
             illum est, officiis libero voluptas.
           </p>
 
-          <div className={styles.btnContainer}>
-            <div className={styles.editPostBtn}>Edit Post</div>
+          {edit && (
+            <div className={styles.btnContainer}>
+              <div className={styles.editPostBtn}>Edit Post</div>
 
-            <PostAnalytics likeCount={37} bookmarkCount={99} viewCount={284} />
-          </div>
+              <PostAnalytics
+                likeCount={37}
+                bookmarkCount={99}
+                viewCount={284}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

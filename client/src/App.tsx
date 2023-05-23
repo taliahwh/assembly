@@ -15,6 +15,7 @@ import PostDetails from './screens/PostDetails/PostDetails';
 import ProfileSettings from './screens/Settings/ProfileSettings/ProfileSettings';
 import PaymentsScreen from './screens/Settings/Payments/PaymentsScreen';
 import UserPostsScreen from './screens/Settings/Posts/UserPostsScreen';
+import UserProfile from './screens/UserProfile/UserProfile';
 
 function App() {
   // console.log(window.location.host);
@@ -24,6 +25,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/post/:id" element={<PostDetails />} />
+          <Route path="/profile/:id" element={<UserProfile />} />
         </Route>
 
         <Route element={<SettingsLayout />}>

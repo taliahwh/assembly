@@ -1,0 +1,59 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #333;
+}
+
+.profileImage {
+  width: 72px;
+  height: 72px;
+  border-radius: 100px;
+  border: white;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.userDetailsContainer {
+  background: mixin.$neutral-100;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  gap: 5px;
+}
+
+.name {
+  font-family: mixin.$sans;
+  font-size: mixin.$heading_04;
+  font-weight: mixin.$semibold;
+
+  @include mixin.mobile {
+    font-size: mixin.$heading_05;
+  }
+}
+
+.socialContainer {
+  display: flex;
+  gap: mixin.$medium;
+  font-size: 18px;
+  margin-bottom: mixin.$medium;
+}
+
+.twitterIcon {
+  color: #1da1f2;
+}
+
+.metaContainer {
+  display: flex;
+  gap: 6px;
+  font-family: mixin.$sans;
+  font-size: mixin.$paragraph_01;
+}
+
+.bold {
+  font-weight: bold;
+}

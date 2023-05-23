@@ -11,7 +11,7 @@ import styles from './header.module.scss';
 
 function Header() {
   const [loggedInUser, setLoggedInUser] = useState(true);
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => setShowDropdown(!showDropdown);
   return (
