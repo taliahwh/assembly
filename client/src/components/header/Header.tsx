@@ -38,7 +38,9 @@ function Header() {
         )}
       </div>
 
-      {showDropdown && <UserDropdownMenu />}
+      {showDropdown && (
+        <UserDropdownMenu closeMenu={() => setShowDropdown(false)} />
+      )}
     </>
   );
 }
